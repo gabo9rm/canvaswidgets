@@ -20,11 +20,14 @@ Required modules:
 
 */
 
+//Import estilos
+$('head').append('<link rel="stylesheet" href="style2.css" type="text/css" />');
+
 $.when(
     $.getScript( "https://code.highcharts.com/5.0.14/modules/accessibility.js" ),
     $.getScript( "https://code.highcharts.com/5.0.14/modules/export-data.js" ),
     $.getScript( "https://code.highcharts.com/5.0.14/modules/exporting.js" ),
-    $.getScript( "https://code.highcharts.com/5.0.14/modules/wordcloud.js" ),
+    $.getScript( "https://code.highcharts.com/modules/wordcloud.js" ),
     $.Deferred(function( deferred ){
         $( deferred.resolve );
     })
@@ -33,7 +36,7 @@ $.when(
     //place your code here, the scripts are all loaded
     
     //Define the canvas widgetID
-    let widgetID = 'CustomizedWidget38984';
+    let widgetID = 'CustomizedWidget68354';
 
     //Word cloud example
     const text =
